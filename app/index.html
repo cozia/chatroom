@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../bower_components/angular-material/angular-material.min.css" />
+      <link rel="stylesheet" type="text/less" href="styles/main.less">
+      <script src="../bower_components/less/dist/less.min.js"></script>
+  </head>
+  <body ng-app="chartroomApp" ng-controller="chartroomCtrl">
+
+
+    <div class="index_container">
+        <header id="index_header">
+            <h3>chart room</h3>
+        </header>
+        <section id="index_section">
+
+                <div class="others_msg">
+                    <div class="face1"></div>
+                    <div class="arrow1"></div>
+                </div>
+
+                <div class="my_msg">
+                    <div class="face2"></div>
+                    <div class="arrow2"></div>
+                    向团长致敬！
+                </div>
+
+        </section>
+        <footer id="index_footer">
+            <form id="index_form" >
+                <input id="index_input" ng-model="my_msg" type="text"/>
+                <button class="index_btn"><div id="index_face_icon"></div></button>
+                <button class="index_btn" send-msg>&radic;</button>
+            </form>
+        </footer>
+    </div>
+
+
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <!--<script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>-->
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="angular-material.min.js"></script>
+    <!--<script src="../bower_components/angular-material/angular-material.min.js"></script>-->
+
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/services/service.js"></script>
+</body>
+</html>
